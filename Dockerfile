@@ -1,4 +1,4 @@
-FROM jupyter/datascience-notebook:bb222f49222e
+FROM jupyter/datascience-notebook:8e15d329f1e9
 
 # todo: use the latest notebook. Maybe setup a custom image?
 
