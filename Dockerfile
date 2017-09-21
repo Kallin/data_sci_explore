@@ -1,5 +1,13 @@
 FROM jupyter/datascience-notebook:c8797824e8c0
 
+# beautiful soup, for parsing HTML (spam model exercises)
+RUN conda install beautifulsoup4
+
+# natural language toolkit, for tokenizing (spam model exercises)
+RUN conda install nltk
+
+RUN python -m nltk.downloader all
+
 # todo: use the latest notebook. Maybe setup a custom image?
 
 # maybe we want to add these libs
